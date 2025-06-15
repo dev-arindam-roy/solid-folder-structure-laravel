@@ -4,60 +4,59 @@ SOLID principal folder structure for laravel framework
 ## 📂 Laravel Project Structure
 
 📂 app
-│── 📂 Contracts              # Interfaces for Abstraction
-│   │── OrderRepository.php
-│   │── PaymentStrategy.php
+├── 📂 Contracts — Interfaces for Abstraction
+│ ├── OrderRepository.php
+│ ├── PaymentStrategy.php
 │
-│── 📂 Repositories           # Repository Pattern for Data Access Layer
-│   │── EloquentOrderRepository.php
+├── 📂 Repositories — Repository Pattern for Data Access Layer
+│ ├── EloquentOrderRepository.php
 │
-│── 📂 Services               # Business Logic Layer (SRP)
-│   │── OrderService.php
-│   │── PaymentService.php
+├── 📂 Services — Business Logic Layer (SRP)
+│ ├── OrderService.php
+│ ├── PaymentService.php
 │
-│── 📂 Factories              # Factory Pattern for Object Creation
-│   │── OrderFactory.php
+├── 📂 Factories — Factory Pattern for Object Creation
+│ ├── OrderFactory.php
 │
-│── 📂 Strategies             # Strategy Pattern for Payment Methods
-│   │── PayPalPayment.php
-│   │── StripePayment.php
+├── 📂 Strategies — Strategy Pattern for Payment Methods
+│ ├── PayPalPayment.php
+│ ├── StripePayment.php
 │
-│── 📂 Events                 # Observer Pattern for Order Events
-│   │── OrderCreated.php
+├── 📂 Events — Observer Pattern for Order Events
+│ ├── OrderCreated.php
 │
-│── 📂 Listeners              # Event Listeners for Order Actions
-│   │── SendOrderConfirmation.php
+├── 📂 Listeners — Event Listeners for Order Actions
+│ ├── SendOrderConfirmation.php
 │
-│── 📂 Decorators             # Decorators for Order Features
-│   │── OrderDiscountDecorator.php
+├── 📂 Decorators — Decorators for Order Features
+│ ├── OrderDiscountDecorator.php
 │
-│── 📂 Models                 # Eloquent Models
-│   │── Order.php
-│   │── OrderItem.php
+├── 📂 Models — Eloquent Models
+│ ├── Order.php
+│ ├── OrderItem.php
 │
-│── 📂 Providers              # Service Providers
-│   │── AppServiceProvider.php
-│
-📂 database
-│── 📂 migrations             # Database Migrations
-│── 📂 seeders                # Database Seeders
-│── 📂 factories              # Laravel Model Factories
-│
-📂 routes
-│── api.php                   # API Routes
-│── web.php                   # Web Routes
-│
-📂 resources
-│── 📂 views                   # Blade Templates
-│
-📂 tests
-│── 📂 Feature                 # Feature Tests
-│── 📂 Unit                    # Unit Tests
-│
-📜 composer.json               # Dependencies
-📜 .env                        # Environment Variables
-📜 artisan                     # CLI Commands
+├── 📂 Providers — Service Providers
+│ ├── AppServiceProvider.php
 
+📂 database
+├── 📂 migrations — Database Migrations
+├── 📂 seeders — Database Seeders
+├── 📂 factories — Laravel Model Factories
+
+📂 routes
+├── api.php — API Routes
+├── web.php — Web Routes
+
+📂 resources
+├── 📂 views — Blade Templates
+
+📂 tests
+├── 📂 Feature — Feature Tests
+├── 📂 Unit — Unit Tests
+
+📜 composer.json — Dependencies
+📜 .env — Environment Variables
+📜 artisan — CLI Commands
 
 # Scalable Laravel Folder Structure for Large-Scale Projects
 For large-scale Laravel projects, it is essential to maintain a modular, scalable, and maintainable folder structure. A well-structured project ensures separation of concerns, reusability, and scalability as the application grows.
